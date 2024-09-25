@@ -1,0 +1,259 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\TimeStamp.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\TimeStamp.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG  0, 0, 197, 52
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About TimeStamp"
+FONT 8, "MS Sans Serif"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
+    LTEXT           "TimeStamp Version 1.0",IDC_STATIC,54,5,83,8,SS_NOPREFIX
+    LTEXT           "Copyright (C) 1999",IDC_STATIC,55,34,119,8
+    DEFPUSHBUTTON   "OK",IDOK,149,7,41,14,WS_GROUP
+    RTEXT           "Written by",IDC_STATIC,43,22,44,9,SS_NOPREFIX
+    LTEXT           "Chris Maunder",IDC_HYPER,89,22,55,9,SS_NOPREFIX
+END
+
+IDD_TIMESTAMP_DIALOG DIALOGEX 0, 0, 279, 87
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "TimeStamp"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "Go!",IDOK,222,7,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,222,23,50,14
+    PUSHBUTTON      "About",IDC_HELPBTN,222,43,50,14
+    COMBOBOX        IDC_FILE,7,9,164,62,CBS_DROPDOWN | CBS_AUTOHSCROLL | WS_VSCROLL | WS_TABSTOP,WS_EX_ACCEPTFILES
+    PUSHBUTTON      "",IDC_BROWSE,175,6,20,18
+    PUSHBUTTON      "",IDC_DIR,195,6,20,18
+    EDITTEXT        IDC_DAYSEDIT,31,52,33,12,ES_AUTOHSCROLL
+    CONTROL         "Spin1",IDC_DAYSSPIN,"msctls_updown32",UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS,58,53,11,11
+    EDITTEXT        IDC_HRSEDIT,88,52,31,12,ES_AUTOHSCROLL
+    CONTROL         "Spin1",IDC_HRSSPIN,"msctls_updown32",UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS,115,53,11,11
+    EDITTEXT        IDC_MINSEDIT,146,52,31,12,ES_AUTOHSCROLL
+    CONTROL         "Spin1",IDC_MINSSPIN,"msctls_updown32",UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS,173,53,11,11
+    RTEXT           "Days",IDC_STATIC,7,53,19,11
+    RTEXT           "Hrs",IDC_STATIC,68,53,15,11
+    RTEXT           "Mins",IDC_STATIC,124,53,19,11
+    LTEXT           "Choose a day, hour and minute offset. This offset will be added to the current time, and all selected files will have their modification date set to this time.",IDC_STATIC,9,24,182,25
+    LTEXT           "Current Time:",IDC_STATIC,187,70,43,10
+    LTEXT           "",IDC_TIME,235,70,33,10
+    CONTROL         "Set time relative to file's time?",IDC_USERELATIVE,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,15,68,108,10
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904B0"
+        BEGIN
+            VALUE "FileDescription", "TimeStamp MFC Application"
+            VALUE "FileVersion", "1, 0, 0, 1"
+            VALUE "InternalName", "TimeStamp"
+            VALUE "LegalCopyright", "Copyright (C) 1999"
+            VALUE "OriginalFilename", "TimeStamp.EXE"
+            VALUE "ProductName", "TimeStamp Application"
+            VALUE "ProductVersion", "1, 0, 0, 1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 190
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 45
+    END
+
+    IDD_TIMESTAMP_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 272
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 80
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDS_ABOUTBOX            "&About TimeStamp..."
+    IDS_CBOX_TOOLTIP        "Enter the files or directories or use the drag and drop feature. "
+    IDS_USERELATIVE         "Set the time of files relative to the file's time, not the current time"
+    IDS_DIR_TOOLTIP         "Select Directory"
+    IDS_FILE_TOOLTIP        "Select Files  "
+    IDS_CHECK_TOOLTIP       "Apply Timestamp to files"
+    IDS_EXIT_TOOLTIP        "Close application"
+    IDS_HELPBTN             "Info"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_DAYS_TOOLTIP        "Enter the number of days to adjust the timestamp"
+    IDS_HRS_TOOLTIP         "Enter the number of hours to adjust the timestamp"
+    IDS_MINS_TOOLTIP        "Enter the number of minutes to adjust the timestamp"
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.K.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENG)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_UK
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_OK256               ICON                    "res\\32x32x256_Ok.ico"
+IDI_HELP_ON             ICON                    "res\\help_on.ico"
+IDI_HELP_OFF            ICON                    "res\\help_off.ico"
+IDI_FILE_OPEN           ICON                    "res\\32x32x256_File.ico"
+IDI_CANCEL256           ICON                    "res\\32x32x256_Cancel.ico"
+IDI_BROWSE256           ICON                    "res\\32x32x256_Browse.ico"
+#endif    // English (U.K.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#endif //_WIN32
+#include "res\TimeStamp.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"         // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
